@@ -1,18 +1,41 @@
-{
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "beatzoid",
-    "password": "beatzoid",
-    "database": "airbnb",
-    "synchronize": true,
-    "logging": true,
-    "entities": ["src/entities/**/*.ts"],
-    "migrations": ["src/migrations/**/*.ts"],
-    "subscribers": ["src/subscribers/**/*.ts"],
-    "cli": {
-        "entitiesDir": "src/entities",
-        "migrationsDir": "src/migrations",
-        "subscribersDir": "src/subscribers"
+[
+    {
+        "name": "development",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "beatzoid",
+        "password": "beatzoid",
+        "database": "airbnb",
+        "synchronize": true,
+        "logging": true,
+        "entities": ["src/entities/**/*.ts"],
+        "migrations": ["src/migrations/**/*.ts"],
+        "subscribers": ["src/subscribers/**/*.ts"],
+        "cli": {
+            "entitiesDir": "src/entities",
+            "migrationsDir": "src/migrations",
+            "subscribersDir": "src/subscribers"
+        }
+    },
+    {
+        "name": "test",
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "beatzoid",
+        "password": "beatzoid",
+        "database": "airbnb-test",
+        "synchronize": true,
+        "logging": false,
+        "dropSchema": true,
+        "entities": ["src/entities/**/*.ts"],
+        "migrations": ["src/migrations/**/*.ts"],
+        "subscribers": ["src/subscribers/**/*.ts"],
+        "cli": {
+            "entitiesDir": "src/entities",
+            "migrationsDir": "src/migrations",
+            "subscribersDir": "src/subscribers"
+        }
     }
-}
+]

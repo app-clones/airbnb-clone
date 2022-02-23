@@ -1,8 +1,9 @@
 import { request } from "graphql-request";
-import { Connection, createConnection } from "typeorm";
+import { Connection } from "typeorm";
 
 import { User } from "../entities/User";
 import { host } from "./constants";
+import { createTypeormConnection } from "../utils/createTypeormConnection";
 
 const email = "tom@gmail.com";
 const password = "tom123";
@@ -16,7 +17,7 @@ const registerMutation = `
 let connection: Connection;
 
 beforeAll(async () => {
-    connection = await createConnection();
+    connection = await createTypeormConnection();
 });
 
 afterAll(() => {
