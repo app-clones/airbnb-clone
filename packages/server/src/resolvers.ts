@@ -1,6 +1,6 @@
 import { hash } from "argon2";
 
-import { User } from "./entity/User";
+import { User } from "./entities/User";
 import { ResolverMap } from "./types/graphqlUtils";
 
 export const resolvers: ResolverMap = {
