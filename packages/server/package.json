@@ -6,7 +6,7 @@
     "dependencies": {
         "@graphql-tools/graphql-file-loader": "^7.3.3",
         "@graphql-tools/load": "^7.5.1",
-        "@graphql-yoga/node": "^0.0.1-beta.1",
+        "@graphql-yoga/node": "^0.0.1-canary-ae94a57.0",
         "argon2": "^0.28.4",
         "gql2ts": "^1.10.1",
         "graphql": "^16.3.0",
