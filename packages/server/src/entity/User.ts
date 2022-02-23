@@ -1,16 +1,14 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 
 @Entity()
-export class User {
-    @PrimaryGeneratedColumn()
-    id: number;
+export class User extends BaseEntity {
+    @PrimaryGeneratedColumn("uuid")
+    id: string;
 
-    @Column()
-    firstName: string;
+    @Column("varchar", { length: 255 })
+    email: string;
 
-    @Column()
-    lastName: string;
-
-    @Column()
-    age: number;
+    // Text not varchar because we're hashing the password
+    @Column("text")
+    password: string;
 }
