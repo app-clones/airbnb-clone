@@ -1,18 +1,25 @@
-/// <reference path="types/schema.d.ts" />
+import { hash } from "argon2";
 
+import { User } from "./entity/User";
 import { ResolverMap } from "./types/graphqlUtils";
 
 export const resolvers: ResolverMap = {
     Query: {
-        hello: (_: any, { name }: GQL.IHelloOnQueryArguments) =>
-            `Hello ${name}!`
+        hello: (_, { name }: GQL.IHelloOnQueryArguments) => `Hello ${name}!`
     },
     Mutation: {
-        register: (
-            _: any,
+        register: async (
+            _,
             { email, password }: GQL.IRegisterOnMutationArguments
         ) => {
-            console.log(email, password);
+            const hashedPassword = await hash(password, {
+                hashLength: 128,
+                timeCost: 5
+            });
+
+            const user = User.create({ email, password: hashedPassword });
+            await user.save();
+
             return true;
         }
     }
