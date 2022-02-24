@@ -22,7 +22,8 @@ export const startServer = async () => {
             resolvers: mergeResolvers(resolvers)
         }),
         logging: {
-            prettyLog: true
+            prettyLog: true,
+            logLevel: "info"
         },
         maskedErrors: false,
         port: process.env.NODE_ENV === "test" ? 3000 : 4000
