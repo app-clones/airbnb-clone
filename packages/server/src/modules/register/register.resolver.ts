@@ -1,17 +1,14 @@
 import { hash } from "argon2";
 
 import { User } from "../../entities/User";
-import { ResolverMap } from "../../types/graphqlUtils";
+import { MutationRegisterArgs, Resolvers } from "../../types/graphql";
 
-export const resolvers: ResolverMap = {
+export const resolvers: Resolvers = {
     Query: {
         hello: (_) => "annoying bug"
     },
     Mutation: {
-        register: async (
-            _,
-            { email, password }: GQL.IRegisterOnMutationArguments
-        ) => {
+        register: async (_, { email, password }: MutationRegisterArgs) => {
             const hashedPassword = await hash(password, {
                 hashLength: 128,
                 timeCost: 5
@@ -20,7 +17,7 @@ export const resolvers: ResolverMap = {
             const user = User.create({ email, password: hashedPassword });
             await user.save();
 
-            return true;
+            return null;
         }
     }
 };
