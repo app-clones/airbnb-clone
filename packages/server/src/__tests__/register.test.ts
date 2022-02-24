@@ -1,9 +1,8 @@
 import { request } from "graphql-request";
-import { Connection } from "typeorm";
 
 import { User } from "../entities/User";
-import { host } from "./constants";
-import { createTypeormConnection } from "../utils/createTypeormConnection";
+import { startServer } from "../startServer";
+import { getConnection } from "typeorm";
 
 const email = "tom@gmail.com";
 const password = "tom123";
@@ -14,14 +13,18 @@ const registerMutation = `
     }
 `;
 
-let connection: Connection;
+let host = "";
+let server: any;
 
 beforeAll(async () => {
-    connection = await createTypeormConnection();
+    server = await startServer();
+    const { port } = server.getAddressInfo();
+    host = `http://127.0.0.1:${port}`;
 });
 
-afterAll(() => {
-    connection.close();
+afterAll(async () => {
+    await server.stop();
+    await getConnection().close();
 });
 
 test("Register user", async () => {
