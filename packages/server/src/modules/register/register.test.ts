@@ -1,7 +1,7 @@
 import { request } from "graphql-request";
 
-import { User } from "../entities/User";
-import { startServer } from "../startServer";
+import { User } from "../../entities/User";
+import { startServer } from "../../startServer";
 import { getConnection } from "typeorm";
 
 const email = "tom@gmail.com";

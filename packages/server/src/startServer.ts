@@ -1,22 +1,26 @@
+import * as path from "path";
+
 import { createServer } from "@graphql-yoga/node";
-import { join } from "path";
+import { mergeSchemas } from "@graphql-tools/schema";
 
-import { loadSchemaSync } from "@graphql-tools/load";
-import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
-import { addResolversToSchema } from "@graphql-tools/schema";
-
-import { resolvers } from "./resolvers";
 import { createTypeormConnection } from "./utils/createTypeormConnection";
+import { loadFilesSync } from "@graphql-tools/load-files";
+import { mergeResolvers, mergeTypeDefs } from "@graphql-tools/merge";
 
 export const startServer = async () => {
-    const typeDefs = loadSchemaSync(join(__dirname, "schema.graphql"), {
-        loaders: [new GraphQLFileLoader()]
+    const resolvers = loadFilesSync(path.join(__dirname, "./modules"), {
+        extensions: ["ts"]
     });
 
-    const schema = addResolversToSchema({ schema: typeDefs, resolvers });
+    const typeDefs = loadFilesSync(path.join(__dirname, "./modules"), {
+        extensions: ["graphql"]
+    });
 
     const server = createServer({
-        schema,
+        schema: mergeSchemas({
+            typeDefs: mergeTypeDefs(typeDefs),
+            resolvers: mergeResolvers(resolvers)
+        }),
         logging: {
             prettyLog: true
         },
