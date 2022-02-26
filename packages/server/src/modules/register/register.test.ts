@@ -9,7 +9,10 @@ const password = "tom123";
 
 const registerMutation = `
     mutation {
-        register(email: "${email}", password: "${password}")
+        register(email: "${email}", password: "${password}") {
+            path
+            message
+        }
     }
 `;
 
@@ -27,14 +30,27 @@ afterAll(async () => {
     await getConnection().close();
 });
 
-test("Register user", async () => {
-    const response = await request(host, registerMutation);
-    expect(response).toEqual({ register: true });
+describe("Register user", () => {
+    it("Should return a response equal to null", async () => {
+        const response = await request(host, registerMutation);
+        expect(response).toEqual({ register: null });
+    });
 
-    const users = await User.find({ where: { email } });
-    expect(users).toHaveLength(1);
+    it("Should return 1 user", async () => {
+        const users = await User.find({ where: { email } });
+        expect(users).toHaveLength(1);
+    });
 
-    const user = users[0];
-    expect(user.email).toEqual(email);
-    expect(user.password).not.toEqual(password);
+    it("Should return user with different password (because it is hashed)", async () => {
+        const users = await User.find({ where: { email } });
+        const user = await users[0];
+        expect(user.email).toEqual(email);
+        expect(user.password).not.toEqual(password);
+    });
+
+    it("Should return error if an email is already taken", async () => {
+        const response = await request(host, registerMutation);
+        expect(response.register).toHaveLength(1);
+        expect(response.register[0].path).toEqual("email");
+    });
 });

@@ -1137,7 +1137,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/graphql-file-loader@npm:^7.0.5, @graphql-tools/graphql-file-loader@npm:^7.3.2":
+"@graphql-tools/graphql-file-loader@npm:^7.0.5, @graphql-tools/graphql-file-loader@npm:^7.3.2, @graphql-tools/graphql-file-loader@npm:^7.3.4":
   version: 7.3.4
   resolution: "@graphql-tools/graphql-file-loader@npm:7.3.4"
   dependencies:
@@ -1207,7 +1207,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/load@npm:^7.3.0, @graphql-tools/load@npm:^7.4.1":
+"@graphql-tools/load@npm:^7.3.0, @graphql-tools/load@npm:^7.4.1, @graphql-tools/load@npm:^7.5.2":
   version: 7.5.2
   resolution: "@graphql-tools/load@npm:7.5.2"
   dependencies:
@@ -7263,6 +7263,9 @@ __metadata:
     "@graphql-codegen/cli": 2.6.2
     "@graphql-codegen/typescript": 2.4.5
     "@graphql-codegen/typescript-resolvers": 2.5.2
+    "@graphql-tools/graphql-file-loader": ^7.3.4
+    "@graphql-tools/import": ^6.6.6
+    "@graphql-tools/load": ^7.5.2
     "@graphql-tools/load-files": ^6.5.3
     "@graphql-tools/merge": ^8.2.3
     "@graphql-tools/schema": ^8.3.2
