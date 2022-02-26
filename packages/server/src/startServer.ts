@@ -10,9 +10,12 @@ import { loadSchema } from "@graphql-tools/load";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 
 export const startServer = async () => {
-    const resolvers = loadFilesSync(path.join(__dirname, "./modules"), {
-        extensions: ["ts"]
-    });
+    const resolvers = loadFilesSync(
+        path.join(__dirname, "./modules/**/*.resolver.ts"),
+        {
+            extensions: ["ts"]
+        }
+    );
 
     const typeDefs = await loadSchema(path.join(__dirname, "./**/*.graphql"), {
         loaders: [new GraphQLFileLoader()]

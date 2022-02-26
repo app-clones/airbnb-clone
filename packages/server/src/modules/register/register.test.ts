@@ -1,15 +1,21 @@
 import { request } from "graphql-request";
+import { getConnection } from "typeorm";
 
 import { User } from "../../entities/User";
 import { startServer } from "../../startServer";
-import { getConnection } from "typeorm";
+import {
+    duplicateEmail,
+    emailNotLongEnough,
+    invalidEmail,
+    passwordNotLongEnough
+} from "./errorMessages";
 
 const email = "tom@gmail.com";
 const password = "tom123";
 
-const registerMutation = `
+const registerMutation = (e: string, p: string) => `
     mutation {
-        register(email: "${email}", password: "${password}") {
+        register(email: "${e}", password: "${p}") {
             path
             message
         }
@@ -32,7 +38,7 @@ afterAll(async () => {
 
 describe("Register user", () => {
     it("Should return a response equal to null", async () => {
-        const response = await request(host, registerMutation);
+        const response = await request(host, registerMutation(email, password));
         expect(response).toEqual({ register: null });
     });
 
@@ -41,16 +47,63 @@ describe("Register user", () => {
         expect(users).toHaveLength(1);
     });
 
-    it("Should return user with different password (because it is hashed)", async () => {
+    it("Should return a user with a different password (because it is hashed)", async () => {
         const users = await User.find({ where: { email } });
-        const user = await users[0];
+        const user = users[0];
+
         expect(user.email).toEqual(email);
         expect(user.password).not.toEqual(password);
     });
 
     it("Should return error if an email is already taken", async () => {
-        const response = await request(host, registerMutation);
-        expect(response.register).toHaveLength(1);
-        expect(response.register[0].path).toEqual("email");
+        const response = await request(host, registerMutation(email, password));
+
+        expect(response.register[0]).toEqual({
+            path: "email",
+            message: duplicateEmail
+        });
+    });
+
+    it('Should return an "invalid email" error', async () => {
+        const response = await request(host, registerMutation("a", password));
+
+        expect(response.register).toEqual([
+            {
+                path: "email",
+                message: emailNotLongEnough
+            },
+            {
+                path: "email",
+                message: invalidEmail
+            }
+        ]);
+    });
+
+    it('Should return a "password too short" error', async () => {
+        const response = await request(host, registerMutation(email, "a"));
+
+        expect(response.register[0]).toEqual({
+            path: "password",
+            message: passwordNotLongEnough
+        });
+    });
+
+    it("Should return several errors", async () => {
+        const response = await request(host, registerMutation("a", "a"));
+
+        expect(response.register).toEqual([
+            {
+                path: "email",
+                message: emailNotLongEnough
+            },
+            {
+                path: "email",
+                message: invalidEmail
+            },
+            {
+                path: "password",
+                message: passwordNotLongEnough
+            }
+        ]);
     });
 });

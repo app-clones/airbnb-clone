@@ -3,7 +3,3 @@
 type Mutation {
     register(email: String!, password: String!): [Error!]
 }
-
-type Query {
-    hello(name: String!): String
-}

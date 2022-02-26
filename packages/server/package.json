@@ -18,7 +18,8 @@
         "graphql-request": "^4.0.0",
         "pg": "^8.7.3",
         "reflect-metadata": "^0.1.13",
-        "typeorm": "0.2.44"
+        "typeorm": "0.2.44",
+        "yup": "^0.32.11"
     },
     "devDependencies": {
         "@graphql-codegen/cli": "2.6.2",
