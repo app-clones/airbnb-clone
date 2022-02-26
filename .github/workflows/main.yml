@@ -31,6 +31,3 @@ jobs:
 
             - name: Build Server
               run: cd packages/server && yarn build
-
-            - name: Run server tests
-              run: cd packages/server && yarn test
