@@ -2,7 +2,7 @@ import { request } from "graphql-request";
 import { getConnection } from "typeorm";
 
 import { User } from "../../entities/User";
-import { startServer } from "../../startServer";
+import { createTypeormConnection } from "../../utils/createTypeormConnection";
 import {
     duplicateEmail,
     emailNotLongEnough,
@@ -22,23 +22,20 @@ const registerMutation = (e: string, p: string) => `
     }
 `;
 
-let host = "";
-let server: any;
-
 beforeAll(async () => {
-    server = await startServer();
-    const { port } = server.getAddressInfo();
-    host = `http://127.0.0.1:${port}`;
+    await createTypeormConnection();
 });
 
 afterAll(async () => {
-    await server.stop();
     await getConnection().close();
 });
 
 describe("Register user", () => {
     it("Should return a response equal to null", async () => {
-        const response = await request(host, registerMutation(email, password));
+        const response = await request(
+            process.env.TEST_HOST!,
+            registerMutation(email, password)
+        );
         expect(response).toEqual({ register: null });
     });
 
@@ -56,7 +53,10 @@ describe("Register user", () => {
     });
 
     it("Should return error if an email is already taken", async () => {
-        const response = await request(host, registerMutation(email, password));
+        const response = await request(
+            process.env.TEST_HOST!,
+            registerMutation(email, password)
+        );
 
         expect(response.register[0]).toEqual({
             path: "email",
@@ -65,7 +65,10 @@ describe("Register user", () => {
     });
 
     it('Should return an "invalid email" error', async () => {
-        const response = await request(host, registerMutation("a", password));
+        const response = await request(
+            process.env.TEST_HOST!,
+            registerMutation("a", password)
+        );
 
         expect(response.register).toEqual([
             {
@@ -80,7 +83,10 @@ describe("Register user", () => {
     });
 
     it('Should return a "password too short" error', async () => {
-        const response = await request(host, registerMutation(email, "a"));
+        const response = await request(
+            process.env.TEST_HOST!,
+            registerMutation(email, "a")
+        );
 
         expect(response.register[0]).toEqual({
             path: "password",
@@ -89,7 +95,10 @@ describe("Register user", () => {
     });
 
     it("Should return several errors", async () => {
-        const response = await request(host, registerMutation("a", "a"));
+        const response = await request(
+            process.env.TEST_HOST!,
+            registerMutation("a", "a")
+        );
 
         expect(response.register).toEqual([
             {

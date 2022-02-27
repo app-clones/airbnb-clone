@@ -61,8 +61,7 @@ export const resolvers: Resolvers = {
             const user = User.create({ email, password: hashedPassword });
             await user.save();
 
-            const link = await createConfirmEmailLink(url, user.id, redis);
-            console.log(link);
+            await createConfirmEmailLink(url, user.id, redis);
 
             return null;
         }

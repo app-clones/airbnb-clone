@@ -63,9 +63,9 @@ export const startServer = async () => {
     });
 
     await createTypeormConnection();
-    app.listen(PORT, () => {
+    const expressServer = app.listen(PORT, () => {
         console.log(`Server running at http://localhost:${PORT}/graphql`);
     });
 
-    return server;
+    return { server, expressServer, redis };
 };
