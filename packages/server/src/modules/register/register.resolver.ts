@@ -2,7 +2,11 @@ import { hash } from "argon2";
 import * as yup from "yup";
 
 import { User } from "../../entities/User";
+
 import { MutationRegisterArgs, Resolvers } from "../../types/graphql";
+import { MyContext } from "../../types/types";
+
+import { createConfirmEmailLink } from "../../utils/createConfirmEmailLink";
 import { formatYupError } from "../../utils/formatYupError";
 import {
     duplicateEmail,
@@ -23,7 +27,11 @@ const schema = yup.object().shape({
 
 export const resolvers: Resolvers = {
     Mutation: {
-        register: async (_, args: MutationRegisterArgs) => {
+        register: async (
+            _,
+            args: MutationRegisterArgs,
+            { redis, url }: MyContext
+        ) => {
             try {
                 await schema.validate(args, { abortEarly: false });
             } catch (err) {
@@ -52,6 +60,9 @@ export const resolvers: Resolvers = {
 
             const user = User.create({ email, password: hashedPassword });
             await user.save();
+
+            const link = await createConfirmEmailLink(url, user.id, redis);
+            console.log(link);
 
             return null;
         }
