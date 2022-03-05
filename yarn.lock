@@ -2430,15 +2430,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"argon2@npm:^0.28.4":
-  version: 0.28.4
-  resolution: "argon2@npm:0.28.4"
+"argon2@npm:^0.28.5":
+  version: 0.28.5
+  resolution: "argon2@npm:0.28.5"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.8
     "@phc/format": ^1.0.0
     node-addon-api: ^4.3.0
-    opencollective-postinstall: ^2.0.3
-  checksum: afba6cac3fd8fe9640b05a157f2290b5b571a467c67b3fc95499ea8dfbd48f4d74a3e81e0c0106dcb158e5f94768951ac1699aa9cc205bb6fcdbf7b7b8c55fdf
+  checksum: cd565f61dd0af549a541b5e5d66528e2eee28dd9c960451b7d8b720079dd1ba6085b0bc5708fa2c6ad5923c0f62371c57ed716327c936ab14656b1badccde421
   languageName: node
   linkType: hard
 
@@ -6708,15 +6707,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"opencollective-postinstall@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "opencollective-postinstall@npm:2.0.3"
-  bin:
-    opencollective-postinstall: index.js
-  checksum: 0a68c5cef135e46d11e665d5077398285d1ce5311c948e8327b435791c409744d4a6bb9c55bd6507fb5f2ef34b0ad920565adcdaf974cbdae701aead6f32b396
-  languageName: node
-  linkType: hard
-
 "optionator@npm:^0.8.1":
   version: 0.8.3
   resolution: "optionator@npm:0.8.3"
@@ -7833,9 +7823,9 @@ __metadata:
     pg: ^8.7.3
     reflect-metadata: ^0.1.13
     ts-jest: ^27.1.3
-    ts-node: 10.5.0
-    typeorm: 0.2.44
-    typescript: ^4.5.5
+    ts-node: 10.6.0
+    typeorm: 0.2.45
+    typescript: ^4.6.2
     uuid: ^8.3.2
     yup: ^0.32.11
   languageName: unknown
@@ -8513,9 +8503,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.5.0":
-  version: 10.5.0
-  resolution: "ts-node@npm:10.5.0"
+"ts-node@npm:10.6.0":
+  version: 10.6.0
+  resolution: "ts-node@npm:10.6.0"
   dependencies:
     "@cspotcode/source-map-support": 0.7.0
     "@tsconfig/node10": ^1.0.7
@@ -8546,7 +8536,7 @@ __metadata:
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: d51ac8a9b3582ce3705cef8d35f3372e40caa277dbd7c7baeb651961538f13d2f11f22402614348f78d9b10501bd1cb5f05ec4f2ec9a74bd0e288de769c32335
+  checksum: bc7589d8c38dc75a2a6f832ac43faaac7edd3d0ef4643f46a9deeaabcdd35722e8c89e729fcd39a16069b30d09e297c2fb3eec917a82dd3f1e7da8b352bbd447
   languageName: node
   linkType: hard
 
@@ -8627,9 +8617,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeorm@npm:0.2.44":
-  version: 0.2.44
-  resolution: "typeorm@npm:0.2.44"
+"typeorm@npm:0.2.45":
+  version: 0.2.45
+  resolution: "typeorm@npm:0.2.45"
   dependencies:
     "@sqltools/formatter": ^1.2.2
     app-root-path: ^3.0.0
@@ -8697,27 +8687,27 @@ __metadata:
       optional: true
   bin:
     typeorm: cli.js
-  checksum: f89deb1f0e9451964ab7c2d5d16ac902079f0eb061d7d0663fe94180f86c42dc2150ee9bf433389e67b4e55e9581836084419a6bbacdc393f44b8ae7b4e9f5da
+  checksum: b7684a52c8ba3b796fb9f7d9ea6223edd9256dbeec67c4befe39515ce684dd684d82a2d53158b738555f5c964efaf09144bdd3ced046638e89aa46483d9a696b
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.5.5":
-  version: 4.5.5
-  resolution: "typescript@npm:4.5.5"
+"typescript@npm:^4.6.2":
+  version: 4.6.2
+  resolution: "typescript@npm:4.6.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 506f4c919dc8aeaafa92068c997f1d213b9df4d9756d0fae1a1e7ab66b585ab3498050e236113a1c9e57ee08c21ec6814ca7a7f61378c058d79af50a4b1f5a5e
+  checksum: 8a44ed7e6f6c4cb1ebe8cf236ecda2fb119d84dcf0fbd77e707b2dfea1bbcfc4e366493a143513ce7f57203c75da9d4e20af6fe46de89749366351046be7577c
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.5.5#~builtin<compat/typescript>":
-  version: 4.5.5
-  resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"
+"typescript@patch:typescript@^4.6.2#~builtin<compat/typescript>":
+  version: 4.6.2
+  resolution: "typescript@patch:typescript@npm%3A4.6.2#~builtin<compat/typescript>::version=4.6.2&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 858c61fa63f7274ca4aaaffeced854d550bf416cff6e558c4884041b3311fb662f476f167cf5c9f8680c607239797e26a2ee0bcc6467fbc05bfcb218e1c6c671
+  checksum: 40b493a71747fb89fa70df104e2c4a5e284b43750af5bea024090a5261cefa387f7a9372411b13030f7bf5555cee4275443d08805642ae5c74ef76740854a4c7
   languageName: node
   linkType: hard
 
