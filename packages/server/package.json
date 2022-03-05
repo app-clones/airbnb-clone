@@ -13,7 +13,7 @@
         "@graphql-tools/merge": "^8.2.3",
         "@graphql-tools/schema": "^8.3.2",
         "@graphql-yoga/node": "^0.0.1-canary-ae94a57.0",
-        "argon2": "^0.28.4",
+        "argon2": "^0.28.5",
         "axios": "^0.26.0",
         "express": "^4.17.3",
         "gql2ts": "^1.10.1",
