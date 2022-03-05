@@ -1,5 +1,6 @@
 import { request } from "graphql-request";
 import { getConnection } from "typeorm";
+import faker from "@faker-js/faker";
 
 import { User } from "../../entities/User";
 import { createTypeormConnection } from "../../utils/createTypeormConnection";
@@ -10,8 +11,8 @@ import {
     passwordNotLongEnough
 } from "./errorMessages";
 
-const email = "tom@gmail.com";
-const password = "tom123";
+const email = faker.internet.email();
+const password = faker.internet.password();
 
 const registerMutation = (e: string, p: string) => `
     mutation {

@@ -4,6 +4,7 @@
     "description": "Awesome project developed with TypeORM.",
     "type": "commonjs",
     "dependencies": {
+        "@faker-js/faker": "^6.0.0-alpha.7",
         "@graphql-codegen/cli": "^2.6.2",
         "@graphql-tools/graphql-file-loader": "^7.3.4",
         "@graphql-tools/import": "^6.6.6",
@@ -13,6 +14,7 @@
         "@graphql-tools/schema": "^8.3.2",
         "@graphql-yoga/node": "^0.0.1-canary-ae94a57.0",
         "argon2": "^0.28.4",
+        "axios": "^0.26.0",
         "express": "^4.17.3",
         "gql2ts": "^1.10.1",
         "graphql": "^16.3.0",

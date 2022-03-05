@@ -7,4 +7,5 @@ module.exports = async () => {
     const { port } = server.expressServer.address() as AddressInfo;
 
     process.env.TEST_HOST = `http://localhost:${port}/graphql`;
+    process.env.TEST_HOST_ROOT = `http://localhost:${port}`;
 };
