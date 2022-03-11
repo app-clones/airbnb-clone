@@ -4439,6 +4439,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"graphql-request@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "graphql-request@npm:4.1.0"
+  dependencies:
+    cross-fetch: ^3.0.6
+    extract-files: ^9.0.0
+    form-data: ^3.0.0
+  peerDependencies:
+    graphql: 14 - 16
+  checksum: 347f3bb943d8f734f152765cbe507a287333d0f477b6912f4745addd4d1160cd171db3d629c7bac5c8ec627cd989c7bdf0407b32e3545808397fc791e65bfbcf
+  languageName: node
+  linkType: hard
+
 "graphql-sse@npm:^1.0.1":
   version: 1.0.6
   resolution: "graphql-sse@npm:1.0.6"
@@ -7773,7 +7786,7 @@ __metadata:
     express: ^4.17.3
     gql2ts: ^1.10.1
     graphql: ^16.3.0
-    graphql-request: ^4.0.0
+    graphql-request: ^4.1.0
     ioredis: ^4.28.5
     jest: ^27.5.1
     pg: ^8.7.3
