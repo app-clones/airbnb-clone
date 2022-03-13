@@ -4,7 +4,7 @@
         "module": "commonjs",
         "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
         "typeRoots": ["node_modules/@types", "./src/types"],
-        "types": ["@types/jest"],
+        "types": ["@types/jest", "@types/node"],
         "sourceMap": true,
         "outDir": "./dist",
         "moduleResolution": "node",

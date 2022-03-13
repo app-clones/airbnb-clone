@@ -5,9 +5,10 @@ import { User } from "../../entities/User";
 
 import { MutationRegisterArgs, Resolvers } from "../../types/graphql";
 import { MyContext } from "../../types/types";
-
 import { createConfirmEmailLink } from "../../utils/createConfirmEmailLink";
+
 import { formatYupError } from "../../utils/formatYupError";
+import { sendEmail } from "../../utils/sendEmail";
 import {
     duplicateEmail,
     emailNotLongEnough,
@@ -61,7 +62,24 @@ export const resolvers: Resolvers = {
             const user = User.create({ email, password: hashedPassword });
             await user.save();
 
-            await createConfirmEmailLink(url, user.id, redis);
+            const confirmUrl = await createConfirmEmailLink(
+                url,
+                user.id,
+                redis
+            );
+
+            if (process.env.NODE_ENV !== "test")
+                await sendEmail(
+                    email,
+                    "Confirm AirBNB Email",
+                    "",
+                    `
+                <html>
+                    <body>
+                        Click <a href="${confirmUrl}">here</a> to confirm your email for AirBNB
+                    </body>
+                </html>`
+                );
 
             return null;
         }

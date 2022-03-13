@@ -44,7 +44,7 @@ export const startServer = async () => {
         port: process.env.NODE_ENV === "test" ? 3000 : 4000,
         context: ({ request }) => ({
             redis,
-            url: "//" + request.headers.get("host"),
+            url: "http://" + request.headers.get("host"),
             request
         })
     });
