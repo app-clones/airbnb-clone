@@ -1,5 +1,4 @@
 import * as path from "path";
-import * as Redis from "ioredis";
 import * as express from "express";
 
 import { createServer } from "@graphql-yoga/node";
@@ -12,7 +11,10 @@ import { loadSchema } from "@graphql-tools/load";
 import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
 
 import { MyContext } from "./types/types";
-import { User } from "./entities/User";
+
+import { confirmEmail } from "./routes/confirmEmail";
+
+import { redis } from "./utils/redis";
 
 export const startServer = async () => {
     const resolvers = loadFilesSync(
@@ -26,7 +28,6 @@ export const startServer = async () => {
         loaders: [new GraphQLFileLoader()]
     });
 
-    const redis = new Redis();
     const app = express();
     const PORT = process.env.NODE_ENV === "test" ? 3000 : 4000;
 
@@ -50,18 +51,7 @@ export const startServer = async () => {
 
     app.use("/graphql", server.requestListener);
 
-    app.get("/confirm/:id", async (req, res) => {
-        const { id } = req.params;
-        const userId = await redis.get(id);
-
-        if (userId) {
-            await User.update({ id: userId }, { confirmed: true });
-            await redis.del(id);
-            res.send("ok");
-        } else {
-            res.send("invalid");
-        }
-    });
+    app.get("/confirm/:id", confirmEmail);
 
     await createTypeormConnection();
     const expressServer = app.listen(PORT, () => {

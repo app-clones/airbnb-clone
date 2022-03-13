@@ -5,8 +5,8 @@ import faker from "@faker-js/faker";
 import { getConnection } from "typeorm";
 
 import { User } from "../entities/User";
-import { createConfirmEmailLink } from "./createConfirmEmailLink";
-import { createTypeormConnection } from "./createTypeormConnection";
+import { createConfirmEmailLink } from "../utils/createConfirmEmailLink";
+import { createTypeormConnection } from "../utils/createTypeormConnection";
 
 let userId: string;
 const redis = new Redis();
