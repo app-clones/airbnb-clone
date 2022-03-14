@@ -28,7 +28,6 @@
         "database": "airbnb-test",
         "synchronize": true,
         "logging": false,
-        "dropSchema": true,
         "entities": ["src/entities/**/*.ts"],
         "migrations": ["src/migrations/**/*.ts"],
         "subscribers": ["src/subscribers/**/*.ts"],
