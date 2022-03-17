@@ -3542,7 +3542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^2.16.1":
+"date-fns@npm:^2.16.1, date-fns@npm:^2.28.0":
   version: 2.28.0
   resolution: "date-fns@npm:2.28.0"
   checksum: a0516b2e4f99b8bffc6cc5193349f185f195398385bdcaf07f17c2c4a24473c99d933eb0018be4142a86a6d46cb0b06be6440ad874f15e795acbedd6fd727a1f
@@ -3581,6 +3581,18 @@ __metadata:
     supports-color:
       optional: true
   checksum: 14472d56fe4a94dbcfaa6dbed2dd3849f1d72ba78104a1a328047bb564643ca49df0224c3a17fa63533fd11dd3d4c8636cd861191232a2c6735af00cc2d4de16
+  languageName: node
+  linkType: hard
+
+"debug@npm:^4.3.3":
+  version: 4.3.4
+  resolution: "debug@npm:4.3.4"
+  dependencies:
+    ms: 2.1.2
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 3dbad3f94ea64f34431a9cbf0bafb61853eda57bff2880036153438f50fb5a84f27683ba0d8e5426bf41a8c6ff03879488120cf5b3a761e77953169c0600a708
   languageName: node
   linkType: hard
 
@@ -3790,13 +3802,6 @@ __metadata:
   version: 16.0.0
   resolution: "dotenv@npm:16.0.0"
   checksum: 664cebb51f0a9a1d1b930f51f0271e72e26d62feaecc9dc03df39453dd494b4e724809ca480fb3ec3213382b1ed3f791aaeb83569a137f9329ce58efd4853dbf
-  languageName: node
-  linkType: hard
-
-"dotenv@npm:^8.2.0":
-  version: 8.6.0
-  resolution: "dotenv@npm:8.6.0"
-  checksum: 38e902c80b0666ab59e9310a3d24ed237029a7ce34d976796349765ac96b8d769f6df19090f1f471b77a25ca391971efde8a1ea63bb83111bd8bec8e5cc9b2cd
   languageName: node
   linkType: hard
 
@@ -4528,7 +4533,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.2.0":
   version: 7.2.0
   resolution: "glob@npm:7.2.0"
   dependencies:
@@ -5882,7 +5887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:^4.0.0":
+"js-yaml@npm:^4.0.0, js-yaml@npm:^4.1.0":
   version: 4.1.0
   resolution: "js-yaml@npm:4.1.0"
   dependencies:
@@ -8197,7 +8202,7 @@ __metadata:
     reflect-metadata: ^0.1.13
     ts-jest: ^27.1.3
     ts-node: 10.7.0
-    typeorm: 0.2.45
+    typeorm: 0.3.0
     typescript: ^4.6.2
     uuid: ^8.3.2
     yup: ^0.32.11
@@ -9009,7 +9014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:~2.3.0":
+"tslib@npm:^2, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1, tslib@npm:~2.3.0":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
@@ -9058,27 +9063,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeorm@npm:0.2.45":
-  version: 0.2.45
-  resolution: "typeorm@npm:0.2.45"
+"typeorm@npm:0.3.0":
+  version: 0.3.0
+  resolution: "typeorm@npm:0.3.0"
   dependencies:
     "@sqltools/formatter": ^1.2.2
     app-root-path: ^3.0.0
     buffer: ^6.0.3
     chalk: ^4.1.0
     cli-highlight: ^2.1.11
-    debug: ^4.3.1
-    dotenv: ^8.2.0
-    glob: ^7.1.6
-    js-yaml: ^4.0.0
+    date-fns: ^2.28.0
+    debug: ^4.3.3
+    dotenv: ^16.0.0
+    glob: ^7.2.0
+    js-yaml: ^4.1.0
     mkdirp: ^1.0.4
     reflect-metadata: ^0.1.13
     sha.js: ^2.4.11
-    tslib: ^2.1.0
+    tslib: ^2.3.1
     uuid: ^8.3.2
     xml2js: ^0.4.23
-    yargs: ^17.0.1
-    zen-observable-ts: ^1.0.0
+    yargs: ^17.3.1
   peerDependencies:
     "@sap/hana-client": ^2.11.14
     better-sqlite3: ^7.1.2
@@ -9128,7 +9133,7 @@ __metadata:
       optional: true
   bin:
     typeorm: cli.js
-  checksum: b7684a52c8ba3b796fb9f7d9ea6223edd9256dbeec67c4befe39515ce684dd684d82a2d53158b738555f5c964efaf09144bdd3ced046638e89aa46483d9a696b
+  checksum: f00b635b0fe3fef80fd9ba32046f45b7f11032de347ccb41376e06c5439c04bd66f45982cb2c9d47a175939b49d0b0221fa6b3dbcf81cfcb9ce3ddd573ac80e3
   languageName: node
   linkType: hard
 
@@ -9699,7 +9704,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.0.0, yargs@npm:^17.0.1":
+"yargs@npm:^17.0.0, yargs@npm:^17.3.1":
   version: 17.3.1
   resolution: "yargs@npm:17.3.1"
   dependencies:
@@ -9740,21 +9745,5 @@ __metadata:
     property-expr: ^2.0.4
     toposort: ^2.0.2
   checksum: 43a16786b47cc910fed4891cebdd89df6d6e31702e9462e8f969c73eac88551ce750732608012201ea6b93802c8847cb0aa27b5d57370640f4ecf30f9f97d4b0
-  languageName: node
-  linkType: hard
-
-"zen-observable-ts@npm:^1.0.0":
-  version: 1.2.3
-  resolution: "zen-observable-ts@npm:1.2.3"
-  dependencies:
-    zen-observable: 0.8.15
-  checksum: 0548b555c67671f1240fb416755d2c27abf095b74a9e25c1abf23b2e15de40e6b076c678a162021358fe62914864eb9f0a57cd65e203d66c4988a08b220e6172
-  languageName: node
-  linkType: hard
-
-"zen-observable@npm:0.8.15":
-  version: 0.8.15
-  resolution: "zen-observable@npm:0.8.15"
-  checksum: b7289084bc1fc74a559b7259faa23d3214b14b538a8843d2b001a35e27147833f4107590b1b44bf5bc7f6dfe6f488660d3a3725f268e09b3925b3476153b7821
   languageName: node
   linkType: hard
