@@ -1002,9 +1002,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-resolvers@npm:2.5.4":
-  version: 2.5.4
-  resolution: "@graphql-codegen/typescript-resolvers@npm:2.5.4"
+"@graphql-codegen/typescript-resolvers@npm:2.6.0":
+  version: 2.6.0
+  resolution: "@graphql-codegen/typescript-resolvers@npm:2.6.0"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^2.4.0
     "@graphql-codegen/typescript": ^2.4.7
@@ -1014,7 +1014,7 @@ __metadata:
     tslib: ~2.3.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: f35c5ef3182a85c355e973cc685c51093ca330b6073a2fc13778a1f0122466cc06f4c2ff69d1b3061567f0678b7255b6c22a47763a9bba1254ff79155830593c
+  checksum: 3c362fb5ead4e4081436cf6aaedea270c62a87f9d431d2ce6338114efc3dab0480b8863904fc02b76df776f14fc625a8df75c768b2fe057e4ce18660c0fbb93f
   languageName: node
   linkType: hard
 
@@ -8168,7 +8168,7 @@ __metadata:
     "@faker-js/faker": ^6.0.0
     "@graphql-codegen/cli": 2.6.2
     "@graphql-codegen/typescript": 2.4.7
-    "@graphql-codegen/typescript-resolvers": 2.5.4
+    "@graphql-codegen/typescript-resolvers": 2.6.0
     "@graphql-tools/graphql-file-loader": ^7.3.5
     "@graphql-tools/import": ^6.6.7
     "@graphql-tools/load": ^7.5.3
