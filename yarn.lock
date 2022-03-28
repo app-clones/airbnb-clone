@@ -1471,7 +1471,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^0.0.1-canary-ae94a57.0":
+"@graphql-yoga/node@npm:^0.0.1-canary-b431ad4.0":
   version: 0.0.1-canary-b431ad4.0
   resolution: "@graphql-yoga/node@npm:0.0.1-canary-b431ad4.0"
   dependencies:
@@ -8180,7 +8180,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.5.3
     "@graphql-tools/merge": ^8.2.6
     "@graphql-tools/schema": ^8.3.5
-    "@graphql-yoga/node": ^0.0.1-canary-ae94a57.0
+    "@graphql-yoga/node": ^0.0.1-canary-b431ad4.0
     "@types/express": ^4.17.13
     "@types/ioredis": ^4.28.10
     "@types/jest": ^27.4.1
