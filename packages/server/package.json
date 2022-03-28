@@ -12,7 +12,7 @@
         "@graphql-tools/load-files": "^6.5.3",
         "@graphql-tools/merge": "^8.2.6",
         "@graphql-tools/schema": "^8.3.5",
-        "@graphql-yoga/node": "^0.0.1-canary-ae94a57.0",
+        "@graphql-yoga/node": "^0.0.1-canary-b431ad4.0",
         "argon2": "^0.28.5",
         "axios": "^0.26.1",
         "dotenv": "^16.0.0",
