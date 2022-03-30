@@ -1256,17 +1256,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/load@npm:^7.5.5":
-  version: 7.5.5
-  resolution: "@graphql-tools/load@npm:7.5.5"
+"@graphql-tools/load@npm:^7.5.6":
+  version: 7.5.6
+  resolution: "@graphql-tools/load@npm:7.5.6"
   dependencies:
-    "@graphql-tools/schema": 8.3.5
+    "@graphql-tools/schema": 8.3.6
     "@graphql-tools/utils": 8.6.5
     p-limit: 3.1.0
     tslib: ~2.3.0
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 38c64c60adf5bfd84634353958a588c68eac8b4760a680f805bb485637fae1b45bb57adb949f1762c37fdbd2bf063fc608ad4756be191fd6ecee0110929ee912
+  checksum: 2c45b3e188c4174e7c970d162a53ed3f97d735f3a3c0b4636c3bbad3b715f70f6cfded85070eca897186049c01ff96e8dd60720ace4d87bf0f3f0326a608a1ff
   languageName: node
   linkType: hard
 
@@ -1362,9 +1362,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:8.3.5, @graphql-tools/schema@npm:^8.3.5":
-  version: 8.3.5
-  resolution: "@graphql-tools/schema@npm:8.3.5"
+"@graphql-tools/schema@npm:8.3.6, @graphql-tools/schema@npm:^8.3.6":
+  version: 8.3.6
+  resolution: "@graphql-tools/schema@npm:8.3.6"
   dependencies:
     "@graphql-tools/merge": 8.2.6
     "@graphql-tools/utils": 8.6.5
@@ -1372,7 +1372,7 @@ __metadata:
     value-or-promise: 1.0.11
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 959dc33eb8b0dbe5f1946e2fe9ceeaa6e5b3ec5a56eeb04e1831b49cd74773679ff249def8dd9f627e971ed949ffda8065f9c0507a12d7bec3e6c139197aef92
+  checksum: 2a55aabdcdce2ba20fee75435e9f5f014c6f93976c18561469596accc509eae4fb3277cfdbeb852f65f22cc25784ebdeef8354fc56ea27c5d675676c3575e603
   languageName: node
   linkType: hard
 
@@ -8176,10 +8176,10 @@ __metadata:
     "@graphql-codegen/typescript-resolvers": 2.6.1
     "@graphql-tools/graphql-file-loader": ^7.3.7
     "@graphql-tools/import": ^6.6.9
-    "@graphql-tools/load": ^7.5.5
+    "@graphql-tools/load": ^7.5.6
     "@graphql-tools/load-files": ^6.5.3
     "@graphql-tools/merge": ^8.2.6
-    "@graphql-tools/schema": ^8.3.5
+    "@graphql-tools/schema": ^8.3.6
     "@graphql-yoga/node": ^0.0.1-canary-b431ad4.0
     "@types/express": ^4.17.13
     "@types/ioredis": ^4.28.10
