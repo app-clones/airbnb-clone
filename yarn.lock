@@ -2754,13 +2754,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:^3.5.0":
-  version: 3.7.2
-  resolution: "bluebird@npm:3.7.2"
-  checksum: 869417503c722e7dc54ca46715f70e15f4d9c602a423a02c825570862d12935be59ed9c7ba34a9b31f186c017c23cac6b54e35446f8353059c101da73eac22ef
-  languageName: node
-  linkType: hard
-
 "body-parser@npm:1.19.2":
   version: 1.19.2
   resolution: "body-parser@npm:1.19.2"
@@ -6847,16 +6840,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-mailjet@npm:^3.3.11":
-  version: 3.3.11
-  resolution: "node-mailjet@npm:3.3.11"
+"node-mailjet@npm:^3.3.13":
+  version: 3.3.13
+  resolution: "node-mailjet@npm:3.3.13"
   dependencies:
-    bluebird: ^3.5.0
     json-bigint: ^1.0.0
     qs: ^6.5.0
     superagent: ^7.1.1
     superagent-proxy: ^3.0.0
-  checksum: ae2a65f6bc7c11167bc0ce0fc1e0e23091ac79bd24705d5873f0dd45b781acab9e35ffea15aadd5a1c9817de1c22b85a13d2256793ac1967d10853ed6ef5a240
+  checksum: c9f69ecd9ce81003d8d7c9310ba0c5a5f325fb8c6f4d28b91c8918b5da53ed06d371f5e531d7c52e4103c75dc8f564e2c9a15928f30d95b58caac91c4e6cb901
   languageName: node
   linkType: hard
 
@@ -8237,7 +8229,7 @@ __metadata:
     graphql-request: ^4.2.0
     ioredis: ^4.28.5
     jest: ^27.5.1
-    node-mailjet: ^3.3.11
+    node-mailjet: ^3.3.13
     pg: ^8.7.3
     reflect-metadata: ^0.1.13
     ts-jest: ^27.1.4
