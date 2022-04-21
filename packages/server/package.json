@@ -4,7 +4,7 @@
     "description": "Awesome project developed with TypeORM.",
     "type": "commonjs",
     "dependencies": {
-        "@faker-js/faker": "^6.1.2",
+        "@faker-js/faker": "^6.2.0",
         "@graphql-codegen/cli": "^2.6.2",
         "@graphql-tools/graphql-file-loader": "^7.3.11",
         "@graphql-tools/import": "^6.6.13",
