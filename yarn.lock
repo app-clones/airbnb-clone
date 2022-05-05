@@ -6828,15 +6828,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-mailjet@npm:^3.3.13":
-  version: 3.3.13
-  resolution: "node-mailjet@npm:3.3.13"
+"node-mailjet@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "node-mailjet@npm:3.4.1"
   dependencies:
     json-bigint: ^1.0.0
     qs: ^6.5.0
     superagent: ^7.1.1
     superagent-proxy: ^3.0.0
-  checksum: c9f69ecd9ce81003d8d7c9310ba0c5a5f325fb8c6f4d28b91c8918b5da53ed06d371f5e531d7c52e4103c75dc8f564e2c9a15928f30d95b58caac91c4e6cb901
+  checksum: 06b97a6031e551a874e884fcb65f6e4c5b3dfb7d873cb4525ffc388a86b5d08dbaf9c148c56d7daa18b6400bd07f7c2285ed48221e9a88a99988c16a45b785b8
   languageName: node
   linkType: hard
 
@@ -8194,7 +8194,7 @@ __metadata:
     graphql-request: ^4.2.0
     ioredis: ^4.28.5
     jest: ^28.0.3
-    node-mailjet: ^3.3.13
+    node-mailjet: ^3.4.1
     pg: ^8.7.3
     reflect-metadata: ^0.1.13
     ts-jest: ^28.0.1
