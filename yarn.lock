@@ -2307,10 +2307,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-mailjet@npm:^3.3.8":
-  version: 3.3.8
-  resolution: "@types/node-mailjet@npm:3.3.8"
-  checksum: 1eaaccffc27e9bde9a0c0ebb11d4b1ce337b4d599613e31e88a0acb0f295b30c04467d19a30eaaad734f6c72459dc302d6fb66b16d4c6f8fb5ba8f30fc1da826
+"@types/node-mailjet@npm:^3.3.9":
+  version: 3.3.9
+  resolution: "@types/node-mailjet@npm:3.3.9"
+  checksum: 98fc8d8e96f09f927d9e29a6e44ad130fafccc3d0d5d57a6bab1fe1991c22589fd553b915c56f8ff1218a9777625fc75bd481246d07dce5efbf58f8e4d497a40
   languageName: node
   linkType: hard
 
@@ -8219,7 +8219,7 @@ __metadata:
     "@types/ioredis": ^4.28.10
     "@types/jest": ^27.5.1
     "@types/node": ^17.0.21
-    "@types/node-mailjet": ^3.3.8
+    "@types/node-mailjet": ^3.3.9
     "@types/uuid": ^8.3.4
     argon2: ^0.28.5
     axios: ^0.27.2
