@@ -61,7 +61,7 @@ describe("Login", () => {
         // Unconfirmed email
         await expectLoginError(email, password, CONFIRM_EMAIL);
 
-        User.update({ email }, { confirmed: true });
+        await User.update({ email }, { confirmed: true });
 
         // Wrong password
         await expectLoginError(email, "wrong", INVALID_LOGIN);
