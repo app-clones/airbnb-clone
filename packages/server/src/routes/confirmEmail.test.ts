@@ -1,6 +1,6 @@
-import * as Redis from "ioredis";
+import Redis from "ioredis";
 import axios from "axios";
-import faker from "@faker-js/faker";
+import { faker } from "@faker-js/faker";
 
 import { getConnection } from "typeorm";
 
@@ -22,7 +22,7 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-    await getConnection().close();
+    await getConnection().destroy();
 });
 
 describe("Create Confirm Email Link", () => {

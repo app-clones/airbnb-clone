@@ -1,4 +1,4 @@
-import * as Mailjet from "node-mailjet";
+import Mailjet from "node-mailjet";
 
 export const sendEmail = async (
     recipient: string,
@@ -7,10 +7,10 @@ export const sendEmail = async (
     html?: string
 ) => {
     if (process.env.NODE_ENV !== "test") {
-        const mailjet = Mailjet.connect(
-            process.env.MAILJET_API_KEY!,
-            process.env.MAILJET_API_SECRET!
-        );
+        const mailjet = new Mailjet({
+            apiKey: process.env.MAILJET_API_KEY!,
+            apiSecret: process.env.MAILJET_API_SECRET!
+        });
 
         const request = mailjet.post("send", { version: "v3.1" }).request({
             Messages: [

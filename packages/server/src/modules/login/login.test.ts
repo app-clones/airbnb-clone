@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 import { request } from "graphql-request";
-import { Connection } from "typeorm";
+import { DataSource } from "typeorm";
 
 import { CONFIRM_EMAIL, INVALID_LOGIN } from "./errorMessages";
 
@@ -29,7 +29,7 @@ const loginMutation = (e: string, p: string) => `
     }
 `;
 
-let conn: Connection;
+let conn: DataSource;
 
 beforeAll(async () => {
     conn = await createTypeormConnection();

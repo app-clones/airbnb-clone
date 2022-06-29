@@ -1,6 +1,6 @@
 import { request } from "graphql-request";
-import { Connection } from "typeorm";
-import faker from "@faker-js/faker";
+import { DataSource } from "typeorm";
+import { faker } from "@faker-js/faker";
 
 import { User } from "../../entities/User";
 import { createTypeormConnection } from "../../utils/createTypeormConnection";
@@ -23,7 +23,7 @@ const registerMutation = (e: string, p: string) => `
     }
 `;
 
-let conn: Connection;
+let conn: DataSource;
 
 beforeAll(async () => {
     conn = await createTypeormConnection();
