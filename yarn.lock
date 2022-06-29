@@ -1655,6 +1655,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ioredis/commands@npm:^1.1.1":
+  version: 1.2.0
+  resolution: "@ioredis/commands@npm:1.2.0"
+  checksum: 9b20225ba36ef3e5caf69b3c0720597c3016cc9b1e157f519ea388f621dd9037177f84cfe7e25c4c32dad7dd90c70ff9123cd411f747e053cf292193c9c461e2
+  languageName: node
+  linkType: hard
+
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -3698,7 +3705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.3":
+"debug@npm:^4.3.3, debug@npm:^4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -3805,10 +3812,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"denque@npm:^1.1.0":
-  version: 1.5.1
-  resolution: "denque@npm:1.5.1"
-  checksum: 4375ad19d5cea99f90effa82a8cecdaa10f4eb261fbcd7e47cd753ff2737f037aac8f7f4e031cc77f3966314c491c86a0d3b20c128aeee57f791b4662c45108e
+"denque@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "denque@npm:2.0.1"
+  checksum: ec398d1e3c6c8d4f5213dcf9ad74d7faa3b461e29a0019c9742b49a97ac5e16aa7134db45fa9d841e318e7722dd1ba670a474fde9a5b0d870b3a5fc6fe914c30
   languageName: node
   linkType: hard
 
@@ -5094,22 +5101,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^4.28.5":
-  version: 4.28.5
-  resolution: "ioredis@npm:4.28.5"
+"ioredis@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "ioredis@npm:5.1.0"
   dependencies:
+    "@ioredis/commands": ^1.1.1
     cluster-key-slot: ^1.1.0
-    debug: ^4.3.1
-    denque: ^1.1.0
+    debug: ^4.3.4
+    denque: ^2.0.1
     lodash.defaults: ^4.2.0
-    lodash.flatten: ^4.4.0
     lodash.isarguments: ^3.1.0
-    p-map: ^2.1.0
-    redis-commands: 1.7.0
     redis-errors: ^1.2.0
     redis-parser: ^3.0.0
     standard-as-callback: ^2.1.0
-  checksum: a8793c3324cd69fa55b4baacbda118ce6724e574260157761276b31411dd3e168c75490f7155c6ce34d79e01488efa98e0cdb162991970fd56da7cbcdafb8fb8
+  checksum: 7b1c137836ee136a634926df4ec68cc2393772a32ecda8e30dd305d7b9182af02d600456e661f96a6ceada17560ce7b6458948fd09b8adc277a1d287325777dd
   languageName: node
   linkType: hard
 
@@ -6139,13 +6144,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.flatten@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "lodash.flatten@npm:4.4.0"
-  checksum: 0ac34a393d4b795d4b7421153d27c13ae67e08786c9cbb60ff5b732210d46f833598eee3fb3844bb10070e8488efe390ea53bb567377e0cb47e9e630bf0811cb
-  languageName: node
-  linkType: hard
-
 "lodash.get@npm:^4":
   version: 4.4.2
   resolution: "lodash.get@npm:4.4.2"
@@ -6977,7 +6975,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-map@npm:^2.0.0, p-map@npm:^2.1.0":
+"p-map@npm:^2.0.0":
   version: 2.1.0
   resolution: "p-map@npm:2.1.0"
   checksum: 9e3ad3c9f6d75a5b5661bcad78c91f3a63849189737cd75e4f1225bf9ac205194e5c44aac2ef6f09562b1facdb9bd1425584d7ac375bfaa17b3f1a142dab936d
@@ -7536,13 +7534,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redis-commands@npm:1.7.0":
-  version: 1.7.0
-  resolution: "redis-commands@npm:1.7.0"
-  checksum: d1ff7fbcb5e54768c77f731f1d49679d2a62c3899522c28addb4e2e5813aea8bcac3f22519d71d330224c3f2937f935dfc3d8dc65e90db0f5fe22dc2c1515aa7
-  languageName: node
-  linkType: hard
-
 "redis-errors@npm:^1.0.0, redis-errors@npm:^1.2.0":
   version: 1.2.0
   resolution: "redis-errors@npm:1.2.0"
@@ -7940,7 +7931,7 @@ __metadata:
     gql2ts: ^1.10.1
     graphql: ^16.5.0
     graphql-request: ^4.3.0
-    ioredis: ^4.28.5
+    ioredis: ^5.1.0
     jest: ^28.1.2
     node-mailjet: ^3.4.1
     pg: ^8.7.3
