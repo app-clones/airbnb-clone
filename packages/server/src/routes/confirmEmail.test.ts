@@ -2,17 +2,18 @@ import Redis from "ioredis";
 import axios from "axios";
 import { faker } from "@faker-js/faker";
 
-import { getConnection } from "typeorm";
-
 import { User } from "../entities/User";
 import { createConfirmEmailLink } from "../utils/createConfirmEmailLink";
-import { createTypeormConnection } from "../utils/createTypeormConnection";
+import dataSource from "../utils/dataSource";
+import { DataSource } from "typeorm";
 
 let userId: string;
 const redis = new Redis();
 
+let conn: DataSource;
+
 beforeAll(async () => {
-    await createTypeormConnection();
+    conn = await dataSource.initialize();
     const user = await User.create({
         email: faker.internet.email(),
         password: faker.internet.password()
@@ -22,7 +23,7 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-    await getConnection().destroy();
+    await conn.destroy();
 });
 
 describe("Create Confirm Email Link", () => {

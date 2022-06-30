@@ -11,7 +11,7 @@ import * as session from "express-session";
 import * as connectRedis from "connect-redis";
 import * as cors from "cors";
 
-import { createTypeormConnection } from "./utils/createTypeormConnection";
+import dataSource from "./utils/dataSource";
 
 import { mergeSchemas } from "@graphql-tools/schema";
 import { loadFilesSync } from "@graphql-tools/load-files";
@@ -104,7 +104,7 @@ export const startServer = async () => {
 
     app.use("/graphql", server);
 
-    await createTypeormConnection();
+    await dataSource.initialize();
 
     return { server, expressServer, redis };
 };

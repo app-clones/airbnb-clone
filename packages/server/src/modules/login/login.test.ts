@@ -6,7 +6,7 @@ import { CONFIRM_EMAIL, INVALID_LOGIN } from "./errorMessages";
 
 import { User } from "../../entities/User";
 
-import { createTypeormConnection } from "../../utils/createTypeormConnection";
+import dataSource from "../../utils/dataSource";
 
 const email = faker.internet.email();
 const password = faker.internet.password();
@@ -32,11 +32,11 @@ const loginMutation = (e: string, p: string) => `
 let conn: DataSource;
 
 beforeAll(async () => {
-    conn = await createTypeormConnection();
+    conn = await dataSource.initialize();
 });
 
 afterAll(async () => {
-    await conn.close();
+    await conn.destroy();
 });
 
 const expectLoginError = async (e: string, p: string, errorMsg: string) => {

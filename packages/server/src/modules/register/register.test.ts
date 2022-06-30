@@ -3,7 +3,7 @@ import { DataSource } from "typeorm";
 import { faker } from "@faker-js/faker";
 
 import { User } from "../../entities/User";
-import { createTypeormConnection } from "../../utils/createTypeormConnection";
+import dataSource from "../../utils/dataSource";
 import {
     duplicateEmail,
     emailNotLongEnough,
@@ -26,11 +26,11 @@ const registerMutation = (e: string, p: string) => `
 let conn: DataSource;
 
 beforeAll(async () => {
-    conn = await createTypeormConnection();
+    conn = await dataSource.initialize();
 });
 
 afterAll(async () => {
-    await conn.close();
+    await conn.destroy();
 });
 
 describe("Register user", () => {
