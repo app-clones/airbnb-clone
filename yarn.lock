@@ -1407,9 +1407,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.11.1":
-  version: 2.11.1
-  resolution: "@graphql-yoga/node@npm:2.11.1"
+"@graphql-yoga/node@npm:^2.11.2":
+  version: 2.11.2
+  resolution: "@graphql-yoga/node@npm:2.11.2"
   dependencies:
     "@envelop/core": ^2.4.0
     "@graphql-tools/utils": ^8.8.0
@@ -1419,7 +1419,7 @@ __metadata:
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 7bbe192c0d64e32c9e2b051898035d56f5e21336049a3894c140f05dc51d1d707be9f7333281fa270672ed2010abed3651f7d0f44c24edbc4d2a9ce0457babb7
+  checksum: 9e7d675c1cae73d9fe0536bf6113b936d946a227b83ba7fe941e9ba172445a71e3b6c4ad1012755f107f0a5eb509fb3bffa1f638254364b9dcb6a41da050ddb9
   languageName: node
   linkType: hard
 
@@ -7397,7 +7397,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.0
     "@graphql-tools/merge": ^8.3.0
     "@graphql-tools/schema": ^8.5.0
-    "@graphql-yoga/node": ^2.11.1
+    "@graphql-yoga/node": ^2.11.2
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
