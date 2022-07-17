@@ -1405,19 +1405,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.13.2":
-  version: 2.13.2
-  resolution: "@graphql-yoga/node@npm:2.13.2"
+"@graphql-yoga/node@npm:^2.13.3":
+  version: 2.13.3
+  resolution: "@graphql-yoga/node@npm:2.13.3"
   dependencies:
     "@envelop/core": ^2.4.0
     "@graphql-tools/utils": ^8.8.0
     "@graphql-yoga/common": ^2.12.2
     "@graphql-yoga/subscription": ^2.2.2
-    cross-undici-fetch: ^0.4.2
+    cross-undici-fetch: ^0.4.13
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: aa0c96d991409b821e970a5ee691d4bc2b90c2e25fba849e7b02e2315457d733094d1b4d7ff6c098215f450c2285b5b7361d5e010d0f870054a2094717c96dca
+  checksum: 08b46469895261a6eaaedfd6dcaf008b500b2df7baebbb494434641e03ea417607ef8aac2255371170a1590ddea64a262cd3c38b631534176ce8a91088e410ef
   languageName: node
   linkType: hard
 
@@ -3369,6 +3369,21 @@ __metadata:
     undici: 5.5.1
     web-streams-polyfill: ^3.2.0
   checksum: 76927df814f5ac8f5656d69099d20f9970acdfe309a46908913c68e17cf16f4454eeeae3dfc6e9f6fb9efddf1c11a10b805a97d02dedd258efcd3e575e09bc3f
+  languageName: node
+  linkType: hard
+
+"cross-undici-fetch@npm:^0.4.13":
+  version: 0.4.13
+  resolution: "cross-undici-fetch@npm:0.4.13"
+  dependencies:
+    abort-controller: ^3.0.0
+    busboy: ^1.6.0
+    form-data-encoder: ^1.7.1
+    formdata-node: ^4.3.1
+    node-fetch: ^2.6.7
+    undici: 5.5.1
+    web-streams-polyfill: ^3.2.0
+  checksum: e599501109a2af7f29cfeff4b087f24d84d8c47e8d1ac00f0e3db5360770bfaa338187660c29514b5e65b2489e290a08169e840d85aa5214338652d73b74bc53
   languageName: node
   linkType: hard
 
@@ -6973,7 +6988,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.0
     "@graphql-tools/merge": ^8.3.0
     "@graphql-tools/schema": ^8.5.0
-    "@graphql-yoga/node": ^2.13.2
+    "@graphql-yoga/node": ^2.13.3
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
