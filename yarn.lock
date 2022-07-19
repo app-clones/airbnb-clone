@@ -1401,9 +1401,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:^2.12.2":
-  version: 2.12.2
-  resolution: "@graphql-yoga/common@npm:2.12.2"
+"@graphql-yoga/common@npm:^2.12.3":
+  version: 2.12.3
+  resolution: "@graphql-yoga/common@npm:2.12.3"
   dependencies:
     "@envelop/core": ^2.4.0
     "@envelop/parser-cache": ^4.4.0
@@ -1412,28 +1412,28 @@ __metadata:
     "@graphql-tools/utils": ^8.8.0
     "@graphql-typed-document-node/core": ^3.1.1
     "@graphql-yoga/subscription": ^2.2.2
-    cross-undici-fetch: ^0.4.2
+    cross-undici-fetch: ^0.4.13
     dset: ^3.1.1
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 72c926c2adcb068cced1359b020eab8d8afee6d08117bb7bbdfc0f25f1be2a288e27af8ed2519f193057c2c032c23eb0bb321d9c1f7bbca3f81fc0b762136d8b
+  checksum: 1cc9f122528145387faade816051bd3e50d798c0f92a57f66903f4c1f8c90af0b3acdd2a2d6a3183cb53ce6589ff0ffb96a0a24b6eda34e81b6b2f9a84912833
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.13.3":
-  version: 2.13.3
-  resolution: "@graphql-yoga/node@npm:2.13.3"
+"@graphql-yoga/node@npm:^2.13.4":
+  version: 2.13.4
+  resolution: "@graphql-yoga/node@npm:2.13.4"
   dependencies:
     "@envelop/core": ^2.4.0
     "@graphql-tools/utils": ^8.8.0
-    "@graphql-yoga/common": ^2.12.2
+    "@graphql-yoga/common": ^2.12.3
     "@graphql-yoga/subscription": ^2.2.2
     cross-undici-fetch: ^0.4.13
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 08b46469895261a6eaaedfd6dcaf008b500b2df7baebbb494434641e03ea417607ef8aac2255371170a1590ddea64a262cd3c38b631534176ce8a91088e410ef
+  checksum: b4c6d63f1c668bdd234f34841e0a80046be25837aacf2c1b2feb95d2c65a0b4bc771a41e95ef5a732899800f3d7ae2eb7aefc879dcd696c9a1b1cc0d6e9a1737
   languageName: node
   linkType: hard
 
@@ -3358,7 +3358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-undici-fetch@npm:^0.4.0, cross-undici-fetch@npm:^0.4.2":
+"cross-undici-fetch@npm:^0.4.0":
   version: 0.4.8
   resolution: "cross-undici-fetch@npm:0.4.8"
   dependencies:
@@ -7004,7 +7004,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.0
     "@graphql-tools/merge": ^8.3.0
     "@graphql-tools/schema": ^8.5.0
-    "@graphql-yoga/node": ^2.13.3
+    "@graphql-yoga/node": ^2.13.4
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
