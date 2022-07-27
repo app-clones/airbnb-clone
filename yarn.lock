@@ -6024,14 +6024,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-mailjet@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "node-mailjet@npm:5.1.0"
+"node-mailjet@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "node-mailjet@npm:5.1.1"
   dependencies:
     axios: ^0.27.2
     json-bigint: ^1.0.0
     url-join: ^4.0.0
-  checksum: 9ae05aa978afbc43b460cafe51a8b1cdd32f62f08ad0fa14c84c67d896c822d91cc70224927e5845ea628007426d4228c9f4ca02e3e822e08d0c6d65e8a4d8c9
+  checksum: 5a99c032996431064a6914ffd2441f00c086c0df4cb2cd52565d01b97a8353790f7b7c34e7cda62685225ae4847f2efe45e38b20652327fb114d4c27632841ba
   languageName: node
   linkType: hard
 
@@ -7041,7 +7041,7 @@ __metadata:
     graphql-request: ^4.3.0
     ioredis: ^5.2.2
     jest: ^28.1.3
-    node-mailjet: ^5.1.0
+    node-mailjet: ^5.1.1
     pg: ^8.7.3
     "reflect-metadata ": ^0.1.13
     ts-jest: ^28.0.7
