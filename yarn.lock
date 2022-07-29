@@ -1563,9 +1563,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:^2.12.3":
-  version: 2.12.3
-  resolution: "@graphql-yoga/common@npm:2.12.3"
+"@graphql-yoga/common@npm:^2.12.4":
+  version: 2.12.4
+  resolution: "@graphql-yoga/common@npm:2.12.4"
   dependencies:
     "@envelop/core": ^2.4.0
     "@envelop/parser-cache": ^4.4.0
@@ -1574,28 +1574,28 @@ __metadata:
     "@graphql-tools/utils": ^8.8.0
     "@graphql-typed-document-node/core": ^3.1.1
     "@graphql-yoga/subscription": ^2.2.2
-    cross-undici-fetch: ^0.4.13
+    "@whatwg-node/fetch": ^0.2.6
     dset: ^3.1.1
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 1cc9f122528145387faade816051bd3e50d798c0f92a57f66903f4c1f8c90af0b3acdd2a2d6a3183cb53ce6589ff0ffb96a0a24b6eda34e81b6b2f9a84912833
+  checksum: 3fbe8db259418474fcabe87d2705b5368275507883305e0d5f8731a65f09fd8fb7e161e2d91bc27f114ee44d8580a235dcba5231415aa68282f7d05379747053
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.13.4":
-  version: 2.13.4
-  resolution: "@graphql-yoga/node@npm:2.13.4"
+"@graphql-yoga/node@npm:^2.13.5":
+  version: 2.13.5
+  resolution: "@graphql-yoga/node@npm:2.13.5"
   dependencies:
     "@envelop/core": ^2.4.0
     "@graphql-tools/utils": ^8.8.0
-    "@graphql-yoga/common": ^2.12.3
+    "@graphql-yoga/common": ^2.12.4
     "@graphql-yoga/subscription": ^2.2.2
-    cross-undici-fetch: ^0.4.13
+    "@whatwg-node/fetch": ^0.2.6
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: b4c6d63f1c668bdd234f34841e0a80046be25837aacf2c1b2feb95d2c65a0b4bc771a41e95ef5a732899800f3d7ae2eb7aefc879dcd696c9a1b1cc0d6e9a1737
+  checksum: 25e4d8f39f45fde8f02fd28edfb1a574a4052988e42fe2ade618fecfa6a1d5c6599b6208e266589716174be1f8da99b81ca62aa65c83bb18d3c95d71fa5d7b8b
   languageName: node
   linkType: hard
 
@@ -2467,7 +2467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@whatwg-node/fetch@npm:^0.2.3, @whatwg-node/fetch@npm:^0.2.4":
+"@whatwg-node/fetch@npm:^0.2.3, @whatwg-node/fetch@npm:^0.2.4, @whatwg-node/fetch@npm:^0.2.6":
   version: 0.2.6
   resolution: "@whatwg-node/fetch@npm:0.2.6"
   dependencies:
@@ -3593,21 +3593,6 @@ __metadata:
     undici: ^5.1.0
     web-streams-polyfill: ^3.2.0
   checksum: 7645fde1423af37ea2e3d97d913abefaf460eb3031055f495944a410a284dac6a75bec2c6767ca2503513c1687eeca27edae4ee63532bc58c1f8a9f52860c68e
-  languageName: node
-  linkType: hard
-
-"cross-undici-fetch@npm:^0.4.13":
-  version: 0.4.13
-  resolution: "cross-undici-fetch@npm:0.4.13"
-  dependencies:
-    abort-controller: ^3.0.0
-    busboy: ^1.6.0
-    form-data-encoder: ^1.7.1
-    formdata-node: ^4.3.1
-    node-fetch: ^2.6.7
-    undici: 5.5.1
-    web-streams-polyfill: ^3.2.0
-  checksum: e599501109a2af7f29cfeff4b087f24d84d8c47e8d1ac00f0e3db5360770bfaa338187660c29514b5e65b2489e290a08169e840d85aa5214338652d73b74bc53
   languageName: node
   linkType: hard
 
@@ -7228,7 +7213,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.0
     "@graphql-tools/merge": ^8.3.1
     "@graphql-tools/schema": ^8.5.1
-    "@graphql-yoga/node": ^2.13.4
+    "@graphql-yoga/node": ^2.13.5
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
@@ -8036,7 +8021,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:5.5.1, undici@npm:^5.1.0":
+"undici@npm:^5.1.0":
   version: 5.5.1
   resolution: "undici@npm:5.5.1"
   checksum: c041c9093df7ec683479a9555581206a7c7bebfc1ed6e8669920e55618461fc4ce08938e2fbf8ef7d692c2813c44392b5ed25c58396ee4a72ffd1f1f953712c9
