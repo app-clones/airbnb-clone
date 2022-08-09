@@ -1460,7 +1460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:8.5.1, @graphql-tools/schema@npm:^8.5.1":
+"@graphql-tools/schema@npm:8.5.1":
   version: 8.5.1
   resolution: "@graphql-tools/schema@npm:8.5.1"
   dependencies:
@@ -1474,7 +1474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:9.0.0":
+"@graphql-tools/schema@npm:9.0.0, @graphql-tools/schema@npm:^9.0.0":
   version: 9.0.0
   resolution: "@graphql-tools/schema@npm:9.0.0"
   dependencies:
@@ -7259,7 +7259,7 @@ __metadata:
     "@graphql-tools/load": ^7.7.3
     "@graphql-tools/load-files": ^6.6.1
     "@graphql-tools/merge": ^8.3.2
-    "@graphql-tools/schema": ^8.5.1
+    "@graphql-tools/schema": ^9.0.0
     "@graphql-yoga/node": ^2.13.6
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
