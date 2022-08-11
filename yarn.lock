@@ -915,11 +915,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:2.11.5":
-  version: 2.11.5
-  resolution: "@graphql-codegen/cli@npm:2.11.5"
+"@graphql-codegen/cli@npm:2.11.6":
+  version: 2.11.6
+  resolution: "@graphql-codegen/cli@npm:2.11.6"
   dependencies:
-    "@graphql-codegen/core": 2.6.1
+    "@graphql-codegen/core": 2.6.2
     "@graphql-codegen/plugin-helpers": ^2.6.2
     "@graphql-tools/apollo-engine-loader": ^7.3.6
     "@graphql-tools/code-file-loader": ^7.3.1
@@ -957,21 +957,21 @@ __metadata:
     graphql-code-generator: cjs/bin.js
     graphql-codegen: cjs/bin.js
     graphql-codegen-esm: esm/bin.js
-  checksum: 1fd26390e92caed52249f78f87132fa86c3723c36d47f08657d19ea754eeebd85196e8549cf301f15aefbe4cd532698329803f5c1071e4f8306092b871123b92
+  checksum: 2da1a75388d99eb0e51c2eb90c910dd2bedf4f1967acf7eebb5f59e2a49d9fee3b03846a71efe2a49a1e59631c1f0091c85a700a9c270b0f4d795d34752cdc77
   languageName: node
   linkType: hard
 
-"@graphql-codegen/core@npm:2.6.1":
-  version: 2.6.1
-  resolution: "@graphql-codegen/core@npm:2.6.1"
+"@graphql-codegen/core@npm:2.6.2":
+  version: 2.6.2
+  resolution: "@graphql-codegen/core@npm:2.6.2"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^2.6.2
-    "@graphql-tools/schema": ^8.5.0
+    "@graphql-tools/schema": ^9.0.0
     "@graphql-tools/utils": ^8.8.0
     tslib: ~2.4.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: ae9acd9b121b1a602c427325f1dfdd1c278cc094cf35bddaec5df546217315767125c04e5ae9d2683777993f3c3ac70a775bb6f0b233856c08f054000e16e30a
+  checksum: 3d078e9caa11baf7ceaa4d67b29a6be32f50a183c1fa6f228a3ade62902b9b91cdea2c94d99adbadf10ec38a7f2df9f16cd366dc7b4febf95336e3b4a7eb9160
   languageName: node
   linkType: hard
 
@@ -1474,7 +1474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:9.0.1, @graphql-tools/schema@npm:^9.0.1":
+"@graphql-tools/schema@npm:9.0.1, @graphql-tools/schema@npm:^9.0.0, @graphql-tools/schema@npm:^9.0.1":
   version: 9.0.1
   resolution: "@graphql-tools/schema@npm:9.0.1"
   dependencies:
@@ -7251,7 +7251,7 @@ __metadata:
   resolution: "server@workspace:packages/server"
   dependencies:
     "@faker-js/faker": ^7.4.0
-    "@graphql-codegen/cli": 2.11.5
+    "@graphql-codegen/cli": 2.11.6
     "@graphql-codegen/typescript": 2.7.3
     "@graphql-codegen/typescript-resolvers": 2.7.3
     "@graphql-tools/graphql-file-loader": ^7.5.2
