@@ -2702,14 +2702,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"argon2@npm:^0.29.0":
-  version: 0.29.0
-  resolution: "argon2@npm:0.29.0"
+"argon2@npm:^0.29.1":
+  version: 0.29.1
+  resolution: "argon2@npm:0.29.1"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.9
     "@phc/format": ^1.0.0
     node-addon-api: ^5.0.0
-  checksum: c63889d01f150b7ff49e5c815c3f61d4b8e1e0a6c3d050a0477246ed75474d1111018dc309967ed1fd762c137222496e22ed8dc408cec39e08dfe82678307900
+  checksum: 91082769fc145e34689dd56fd743e17e0910b153ef13e22898a42f5c069b15a488fa27c239b4f3dbd38357eacddb2b1ad43532a78eb633f6bbe4dcde4cc93c53
   languageName: node
   linkType: hard
 
@@ -7245,7 +7245,7 @@ __metadata:
     "@types/node": ^18.0.0
     "@types/node-mailjet": ^3.3.9
     "@types/uuid": ^8.3.4
-    argon2: ^0.29.0
+    argon2: ^0.29.1
     axios: ^0.27.2
     concurrently: ^7.3.0
     connect-redis: ^6.1.3
