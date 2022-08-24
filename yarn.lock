@@ -1610,9 +1610,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:^2.12.7":
-  version: 2.12.7
-  resolution: "@graphql-yoga/common@npm:2.12.7"
+"@graphql-yoga/common@npm:^2.12.8":
+  version: 2.12.8
+  resolution: "@graphql-yoga/common@npm:2.12.8"
   dependencies:
     "@envelop/core": ^2.5.0
     "@envelop/parser-cache": ^4.6.0
@@ -1626,23 +1626,23 @@ __metadata:
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 0eb5cbd10e93808f96ba6918616392d73ab488bc17c7e20939947ea71f04aa07674d3665242513e880ad241a906b1b009b30df17c591c2ed2ba4583117ec44b4
+  checksum: 9e19fdc0b67d9a316e4f0a454e8bba39ab216592c86a5a99d26fa9af9c3254404cd6015a83435506e9dc69d180361dbe9b891d2f4b93f12538c1a0da6d038083
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.13.8":
-  version: 2.13.8
-  resolution: "@graphql-yoga/node@npm:2.13.8"
+"@graphql-yoga/node@npm:^2.13.9":
+  version: 2.13.9
+  resolution: "@graphql-yoga/node@npm:2.13.9"
   dependencies:
     "@envelop/core": ^2.5.0
     "@graphql-tools/utils": ^8.8.0
-    "@graphql-yoga/common": ^2.12.7
+    "@graphql-yoga/common": ^2.12.8
     "@graphql-yoga/subscription": ^2.2.3
     "@whatwg-node/fetch": ^0.2.6
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 2cf47ea2315b3c81f1c14da8f24f8086d4e39987c6a8346fd0df7ad00cb910f16cc215213180def1b93d6bba4f4a8ce013363a3849fdc10ac2b2aa5f18dc3b97
+  checksum: f8caec55a76422c722c1b19642b1a32871979cfe7a4c6579625e25608e6c1b3bd05cc1f714765760ff83e8528fa0b5a272186a51d9f2ce3eef4858595c5efa6a
   languageName: node
   linkType: hard
 
@@ -7236,7 +7236,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.1
     "@graphql-tools/merge": ^8.3.3
     "@graphql-tools/schema": ^9.0.1
-    "@graphql-yoga/node": ^2.13.8
+    "@graphql-yoga/node": ^2.13.9
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
