@@ -5,7 +5,7 @@
     "type": "commonjs",
     "dependencies": {
         "@faker-js/faker": "^7.4.0",
-        "@graphql-codegen/cli": "^2.11.6",
+        "@graphql-codegen/cli": "^2.11.7",
         "@graphql-tools/graphql-file-loader": "^7.5.2",
         "@graphql-tools/import": "^6.7.3",
         "@graphql-tools/load": "^7.7.4",
@@ -32,7 +32,7 @@
         "yup": "^0.32.11"
     },
     "devDependencies": {
-        "@graphql-codegen/cli": "2.11.6",
+        "@graphql-codegen/cli": "2.11.7",
         "@graphql-codegen/typescript": "2.7.3",
         "@graphql-codegen/typescript-resolvers": "2.7.3",
         "@types/connect-redis": "^0.0.18",
