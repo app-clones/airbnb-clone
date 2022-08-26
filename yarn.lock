@@ -1596,9 +1596,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:^2.12.8":
-  version: 2.12.8
-  resolution: "@graphql-yoga/common@npm:2.12.8"
+"@graphql-yoga/common@npm:^2.12.10":
+  version: 2.12.10
+  resolution: "@graphql-yoga/common@npm:2.12.10"
   dependencies:
     "@envelop/core": ^2.5.0
     "@envelop/parser-cache": ^4.6.0
@@ -1607,28 +1607,28 @@ __metadata:
     "@graphql-tools/utils": ^8.8.0
     "@graphql-typed-document-node/core": ^3.1.1
     "@graphql-yoga/subscription": ^2.2.3
-    "@whatwg-node/fetch": ^0.2.6
+    "@whatwg-node/fetch": ^0.3.0
     dset: ^3.1.1
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: 9e19fdc0b67d9a316e4f0a454e8bba39ab216592c86a5a99d26fa9af9c3254404cd6015a83435506e9dc69d180361dbe9b891d2f4b93f12538c1a0da6d038083
+  checksum: 27abbf02b3293bfdf4d970db41c3552e53c562aa8c158a6c59583a67e223d8d461076c8492295b68a1cf8c873a48276982e2cfe2ae5a76d42159872ca985ee9d
   languageName: node
   linkType: hard
 
-"@graphql-yoga/node@npm:^2.13.9":
-  version: 2.13.9
-  resolution: "@graphql-yoga/node@npm:2.13.9"
+"@graphql-yoga/node@npm:^2.13.11":
+  version: 2.13.11
+  resolution: "@graphql-yoga/node@npm:2.13.11"
   dependencies:
     "@envelop/core": ^2.5.0
     "@graphql-tools/utils": ^8.8.0
-    "@graphql-yoga/common": ^2.12.8
+    "@graphql-yoga/common": ^2.12.10
     "@graphql-yoga/subscription": ^2.2.3
-    "@whatwg-node/fetch": ^0.2.6
+    "@whatwg-node/fetch": ^0.3.0
     tslib: ^2.3.1
   peerDependencies:
     graphql: ^15.2.0 || ^16.0.0
-  checksum: f8caec55a76422c722c1b19642b1a32871979cfe7a4c6579625e25608e6c1b3bd05cc1f714765760ff83e8528fa0b5a272186a51d9f2ce3eef4858595c5efa6a
+  checksum: 448ff28bdd549654fc9a19a7bcfdc6b9d525e3c40a4807115975579890623c587379f548134bd0d6de5fcca901796e94239fc5ea0e00efc4b2d73183977277e1
   languageName: node
   linkType: hard
 
@@ -2542,7 +2542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@whatwg-node/fetch@npm:^0.2.4, @whatwg-node/fetch@npm:^0.2.6":
+"@whatwg-node/fetch@npm:^0.2.4":
   version: 0.2.6
   resolution: "@whatwg-node/fetch@npm:0.2.6"
   dependencies:
@@ -7382,7 +7382,7 @@ __metadata:
     "@graphql-tools/load-files": ^6.6.1
     "@graphql-tools/merge": ^8.3.3
     "@graphql-tools/schema": ^9.0.1
-    "@graphql-yoga/node": ^2.13.9
+    "@graphql-yoga/node": ^2.13.11
     "@types/connect-redis": ^0.0.18
     "@types/cors": ^2.8.12
     "@types/express": ^4.17.13
