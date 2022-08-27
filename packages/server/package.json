@@ -22,7 +22,7 @@
         "express-session": "^1.17.3",
         "gql2ts": "^1.10.1",
         "graphql": "^16.6.0",
-        "graphql-request": "^4.3.0",
+        "graphql-request": "^5.0.0",
         "ioredis": "^5.2.3",
         "node-mailjet": "^5.1.1",
         "pg": "^8.8.0",
