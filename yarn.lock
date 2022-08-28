@@ -7460,7 +7460,7 @@ __metadata:
     "reflect-metadata ": ^0.1.13
     ts-jest: ^28.0.8
     ts-node: 10.9.1
-    typeorm: 0.3.8
+    typeorm: 0.3.9
     typescript: ^4.8.2
     uuid: ^8.3.2
     yup: ^0.32.11
@@ -8078,9 +8078,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeorm@npm:0.3.8":
-  version: 0.3.8
-  resolution: "typeorm@npm:0.3.8"
+"typeorm@npm:0.3.9":
+  version: 0.3.9
+  resolution: "typeorm@npm:0.3.9"
   dependencies:
     "@sqltools/formatter": ^1.2.2
     app-root-path: ^3.0.0
@@ -8156,7 +8156,7 @@ __metadata:
     typeorm: cli.js
     typeorm-ts-node-commonjs: cli-ts-node-commonjs.js
     typeorm-ts-node-esm: cli-ts-node-esm.js
-  checksum: ad02f70fa3f6e1e9780b770a7d7a87bf089c985f6dade5b4a31e5fd63efaa80cfee119333a14312b7e43ee7a51a5c6d5f0bac9cf729373fe3b3cf2d665c2828e
+  checksum: 5de1e5ac352640ea0b4c41cdfc4da2d3715709e8d0899dc7ec74a81a879dd22d0f99bd8244be3fc6353c2574e6657d3d863b4e4f0337278bb098e81afdacc473
   languageName: node
   linkType: hard
 
